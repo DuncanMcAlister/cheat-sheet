@@ -6,5 +6,59 @@
     </head>
     <body>
         <h1>CSS Selectors</h1>
+        <h2>Cheat Sheet</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Selector</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="name">Universal Selector</td>
+                    <td>Applies to all elements in document</td>
+                    <td><span class="symbol">* {}</span><br />Targets all elements on a page</td>
+                </tr>
+                <tr>
+                    <td class="name">Type Selector</td>
+                    <td>Matches element names</td>
+                    <td><span class="symbol">h1, h2, h3 {}</span><br />Targets the h1, h2 and h3 elements</td>
+                </tr>
+                <tr>
+                    <td class="name">Class Selector</td>
+                    <td>Matches an element whose class attribute has a value that matches the one specified after the period (full-stop) symbol</td>
+                    <td><span class="symbol">.note {}</span><br />Targets any element whose class attribute has the value of note
+                    <span class="symbol">p.note {}</span><br />Targets only &lt;p&gt; elements whose class attribute has a value of note</td>
+                </tr>
+                <tr>
+                    <td class="name">ID Selector</td>
+                    <td>Matches an element whose id attribute has a value that matches the one specified after the pound or hash symbol</td>
+                    <td><span class="symbol">#introduction {}0</span><br />Targets the element whose id has the value of introduction</td>
+                </tr>
+                <tr>
+                    <td class="name">Child Selector</td>
+                    <td>Matches an element that is a direct child of another</td>
+                    <td><span class="symbol">li>a {}</span><br />Targets any &lt;a&gt; elements that are children of a &lt;li&gt; elements (but not other &lt;a&gt; elements)</td>
+                </tr>
+                <tr>
+                    <td class="name">Descendant Selector</td>
+                    <td>Matches an element that is a descendant of another specified element (not just a direct child)</td>
+                    <td><span class="symbol">p a {}</span><br />Targets any &lt;a&gt; that is a descendant of any &lt;p&gt; element even if there are other elements betwen them</td>
+                </tr>
+                <tr>
+                    <td class="name">Adjacent Sibling Selector</td>
+                    <td>Matches an element that is the next sibling of another</td>
+                    <td><span class="symbol">h1+p {}</span><br />Targets the first &lt;p&gt; element after any &lt;h1&gt; element (but not other &lt;p&gt; elements</td>
+                </tr>
+                <tr>
+                    <td class="name">General Sibling Selector</td>
+                    <td>Matches an element that is a sibling of another, although it does not have to be the directly preceding element</td>
+                    <td><span class="symbol">h1-p {}</span><br />If you had two &lt;p&gt; elements that are siblings of an &lt;h1&gt; element the rule would apply to both</td>
+                </tr>
+            </tbody>
+        </table>
+        <footer>With thanks to <span class="credit">Duckett, J. (2011) HTML & CSS design and build websites.</span></footer>
     </body>
 </html>
